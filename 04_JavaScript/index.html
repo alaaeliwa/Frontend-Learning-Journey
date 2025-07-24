@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>JAVASCRIPT PROJECT</title>
   <style>
     /* Reset some basic styles */
@@ -12,17 +12,20 @@
       box-sizing: border-box;
     }
 
-    /* Style the body */
+    /* Style the body with CSS Grid and make it responsive */
     body {
       height: 100vh;
-      display: flex;
+      display: grid;
       justify-content: center;
       align-items: center;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      padding: 20px;
       background-color: #1a1a1d;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    /* Style the link */
+    /* Style the links */
     a {
       padding: 15px 30px;
       text-decoration: none;
@@ -33,6 +36,8 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       transition: all 0.3s ease;
+      display: inline-block;
+      text-align: center;
     }
 
     a:hover {
